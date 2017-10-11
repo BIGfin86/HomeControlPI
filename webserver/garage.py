@@ -119,8 +119,8 @@ def show_history():
 @app.route('/webcam')
 def show_webcam():
     url = ipgetter.myip()
-    webcamurl = 'http://' + url + ':8081'
-    return render_template('webcam.html', webcamurl=webcamurl)
+    webcamurl = 'http://' + url + ':5190'
+    return redirect(webcamurl)
 
 
 @app.route('/login', methods=['GET', 'POST'])

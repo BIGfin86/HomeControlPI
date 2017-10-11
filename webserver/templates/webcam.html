@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+{% if session.logged_in %}
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-8 col-sm-push-2">
+      <div class="panel panel-primary text-center">
+        <div class="panel-heading">Front</div>
+        <img class="img-responsive center-block" src="{{ webcamurl }}"></img>
+      <div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
